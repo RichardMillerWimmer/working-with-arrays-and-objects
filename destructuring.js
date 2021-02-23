@@ -92,10 +92,11 @@ function ingredients(object) {
 */
 
 function largeNumbers({first, second, third}) {
-  let lowestNum = first
-  second < lowestNum ? lowestNum = second : null
-  third < lowestNum ? lowestNum = third : null
-  return lowestNum
+  // let lowestNum = first
+  // second < lowestNum ? lowestNum = second : null
+  // third < lowestNum ? lowestNum = third : null
+  // return lowestNum
+  return Math.min(first, second, third)
 };
 
 
