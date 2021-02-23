@@ -174,9 +174,9 @@ for (let key in deleteTheBigNumbers) {
 
 function startsWithK(object) {
   for (let key in object) {
-    if (key.charAt(0) == "k") [
+    if (key.charAt(0) == "k") {
       delete object[key]
-    ]
+    }
   }
   return object
 };
