@@ -193,24 +193,24 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-function looper() {
-  for (let i = 0; i < numsArr.length; i++) {
-    for (let j = 0; j < numsArr[i].length; j++) {
-      numsArr[i][j] % 2 === 0 ? numsArr[i][j] = "even" : numsArr[i][j]= "odd"
-      // if(numsArr[i][j] % 2 === 0) {
-      //   numsArr[i][j] = "even"
-      // } else {
-      //   numsArr[i][j] = "odd"
-      // }
-    }
-  } console.log(numsArr)
-  return numsArr
-};
-
 // function looper() {
-//   numsArr.forEach(elem =>
-//     elem.forEach((innerElem, i) => elem[i] = innerElem % 2 === 0 ? "even" : "odd"
-//   ))
-//   return numsArr 
+//   for (let i = 0; i < numsArr.length; i++) {
+//     for (let j = 0; j < numsArr[i].length; j++) {
+//       numsArr[i][j] % 2 === 0 ? numsArr[i][j] = "even" : numsArr[i][j]= "odd"
+//       // if(numsArr[i][j] % 2 === 0) {
+//       //   numsArr[i][j] = "even"
+//       // } else {
+//       //   numsArr[i][j] = "odd"
+//       // }
+//     }
+//   } console.log(numsArr)
+//   return numsArr
 // };
+
+function looper() {
+  numsArr.forEach(elem =>
+    elem.forEach((innerElem, i) => elem[i] = innerElem % 2 === 0 ? "even" : "odd"
+  ))
+  return numsArr 
+};
 
